@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.js": "/NsNco/static/js/main.19626fed.js",
+    "static/media/thhs.png": "/NsNco/static/media/thhs.878d9d26e23302684bc7.png",
+    "static/media/bg.jpg": "/NsNco/static/media/bg.0bdea4ff9f1be313431e.jpg",
+    "static/media/tree.png": "/NsNco/static/media/tree.da23852c350af989f578.png",
+    "static/media/commerce.png": "/NsNco/static/media/commerce.e57058ec41f8127d492b.png",
+    "static/media/skill.png": "/NsNco/static/media/skill.82d9c50c8df372ae3ff0.png",
+    "static/media/reading.png": "/NsNco/static/media/reading.5a663c5b2324cf8ab817.png",
+    "static/media/gender.png": "/NsNco/static/media/gender.8e113bb8f123b32b7b69.png",
+    "static/media/instagram.png": "/NsNco/static/media/instagram.e719d8b29f452a16302d.png",
+    "static/media/energy.png": "/NsNco/static/media/energy.25038f21f0fb29bb1367.png",
+    "static/media/employment.png": "/NsNco/static/media/employment.6850cf6e987bf70c08d7.png",
+    "static/media/facebook.png": "/NsNco/static/media/facebook.795fce8e464693d7346d.png",
+    "static/media/gmail.png": "/NsNco/static/media/gmail.a2f2146f929409405da0.png",
+    "static/media/linkedin.png": "/NsNco/static/media/linkedin.f249b38224ca41a0b909.png",
+    "static/media/logo.jpeg": "/NsNco/static/media/logo.837117aac6ee2953f302.jpeg",
+    "index.html": "/NsNco/index.html",
+    "main.19626fed.js.map": "/NsNco/static/js/main.19626fed.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.19626fed.js"
+  ]
+}
