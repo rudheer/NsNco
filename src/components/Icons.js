@@ -27,7 +27,7 @@ const useStyles=makeStyles({
     '@media screen and (max-width: 480px)':{
       backgroundColor:"rgba(82, 30, 138, 0.5)",
       margin:'10px',
-      width:'100%',
+      width:'85%',
       display:'flex',
       alignItems:'center',
       justifyContent:'center',

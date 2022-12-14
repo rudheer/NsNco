@@ -18,7 +18,20 @@ const useStyles=makeStyles({
     //backgroundPosition:'inherit',
     backgroundSize:'cover',
     //backgroundAttachment:'fixed'
-    backgroundPositionY:'80%'
+    backgroundPositionY:'80%',
+    '@media screen and (max-width: 480px)':{
+      display:'flex',
+      flexDirection:'column',
+      //backgroundColor:'yellow',
+      width:'100%',
+      height:'80%',
+      backgroundImage:`url(${bg})`,
+      backgroundRepeat:'repeat',
+      //backgroundPosition:'inherit',
+      backgroundSize:'cover',
+      backgroundAttachment:'fixed',
+      backgroundPositionY:'80%',
+    }
   },
   top:{
     display:'flex',
@@ -47,7 +60,16 @@ const useStyles=makeStyles({
     //backgroundColor:'yellow',
     width:'70%',
     padding:'15px',
-    flexDirection:'column'
+    flexDirection:'column',
+    '@media screen and (max-width: 480px)':{
+      display:'flex',
+      alignItems:'center',
+      justifyContent:'center',
+      //backgroundColor:'yellow',
+      width:'100%',
+      padding:'15px',
+      flexDirection:'column',
+    },
   },
   buttonbox:{
     display:'flex',
@@ -55,6 +77,14 @@ const useStyles=makeStyles({
     justifyContent:'center',
     width:'70%',
     //backgroundColor:'blue'
+    '@media screen and (max-width: 480px)':{
+      display:'flex',
+      alignItems:'center',
+      justifyContent:'center',
+      width:'100%',
+      flexDirection:'column'
+      //backgroundColor:'blue'
+    },
   },
   btn:{
     backgroundColor:'rgba(135, 116, 148, 0.5)',

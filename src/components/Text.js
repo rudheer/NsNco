@@ -11,7 +11,17 @@ const useStyles=makeStyles({
     padding:'15px',
     marginLeft:'10px',
     borderRadius:'8px',
-    color:'white'
+    color:'white',
+    '@media screen and (max-width: 480px)':{
+      display:'flex',
+      flexDirection:'column',
+      backgroundColor:'rgba(82, 30, 138, 0.5)',
+      width:'85%',
+      padding:'15px',
+      marginRight:'20px',
+      borderRadius:'8px',
+      color:'white',
+   }
   }
 })
 

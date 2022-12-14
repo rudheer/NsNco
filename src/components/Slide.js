@@ -12,7 +12,12 @@ const useStyles=makeStyles({
     alignItems:'center',
     justifyContent:'center',
     '@media screen and (max-width: 480px)':{
-        display:'none'
+        display:'flex',
+        width:'100%',
+        backgroundColor:'#460D5C',
+        alignItems:'center',
+        justifyContent:'center',
+        height:'30%'
     }
   },
   carousel:{
@@ -36,7 +41,7 @@ const useStyles=makeStyles({
             alignItems:'center',
             justifyContent:'center',
             flexDirection:'column',
-            backgroundColor:'black',
+            //backgroundColor:'black',
             height:'60vh',
         }
     },

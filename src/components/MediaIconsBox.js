@@ -15,7 +15,8 @@ const useStyles=makeStyles({
       alignItems:'center',
       '@media screen and (max-width: 480px)':{
         display:'flex',
-        //width:'100%',
+        flexDirection:'row',
+        width:'100%',
         //flexWrap:'wrap'
         alignItems:'center',
         //backgroundColor:'yellow',
@@ -30,14 +31,12 @@ const useStyles=makeStyles({
       width:'100%',
       height:'80px',
       '@media screen and (max-width: 480px)':{
+        //backgroundColor:'blue',
         display:'flex',
-        flexWrap:'wrap',
         alignItems:'center',
         justifyContent:'center',
-        width:'40px',
-        //height:'80px',
-        //backgroundColor:'blue',
-        //margin:'20px'
+        width:'100%',
+        height:'80px',
       }
     },
     img:{

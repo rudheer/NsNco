@@ -12,6 +12,7 @@ const useStyles=makeStyles({
         '@media screen and (max-width: 480px)':{
             display:'flex',
             flexDirection:'column',
+            height:'1100px'
         }
     },
     mediabox:{
@@ -22,7 +23,6 @@ const useStyles=makeStyles({
         flex:0.7,
         '@media screen and (max-width: 480px)':{
             display:'flex',
-            flexWrap:'wrap',
             alignItems:'center',
             justifyContent:'center',
             backgroundColor:'#090116',
@@ -38,8 +38,9 @@ const useStyles=makeStyles({
         '@media screen and (max-width: 480px)':{
             display:'flex',
             //alignItems:'center',
-            //justifyContent:'center',
+            justifyContent:'center',
             backgroundColor:'pink',
+            height:'100%'
         }
     }
 })
