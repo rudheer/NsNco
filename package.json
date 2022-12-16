@@ -1,6 +1,6 @@
 {
   "name": "nsnco",
-  "homepage": "https://rudheer.github.io/NsNco",
+  "homepage": "https://NsNco.github.io/Invite",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,6 +12,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-material-ui-carousel": "^3.4.2",
+    "react-player": "^2.11.0",
+    "react-responsive-carousel": "^3.2.23",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },

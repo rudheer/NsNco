@@ -33,13 +33,13 @@ const useStyles=makeStyles({
         display:'flex',
         //alignItems:'center',
         //justifyContent:'center',
-        backgroundColor:'pink',
+        backgroundColor:'#460D5C',
         flex:11.3,
         '@media screen and (max-width: 480px)':{
             display:'flex',
             //alignItems:'center',
             justifyContent:'center',
-            backgroundColor:'pink',
+            backgroundColor:'#460D5C',
             height:'100%'
         }
     }
