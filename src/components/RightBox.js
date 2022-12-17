@@ -17,6 +17,13 @@ const useStyles=makeStyles({
       backgroundColor:'yellow',
       width:'100%',
       height:'100%'
+    },
+    '@media screen and (max-width: 1024px)':{
+      display:'flex',
+      flexDirection:'column',
+      backgroundColor:'yellow',
+      width:'100%',
+      height:'100%'
     }
   }
 })

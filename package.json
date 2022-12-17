@@ -1,6 +1,6 @@
 {
   "name": "nsnco",
-  "homepage": "https://NsNco.github.io/Invite",
+  "homepage": "https://rudheer.github.io/NsNco",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,6 +15,7 @@
     "react-player": "^2.11.0",
     "react-responsive-carousel": "^3.2.23",
     "react-scripts": "5.0.1",
+    "react-share": "^4.4.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

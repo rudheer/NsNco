@@ -18,7 +18,7 @@ const useStyles=makeStyles({
   allbox:{
     backgroundColor:"rgba(82, 30, 138, 0.5)",
     margin:'10px',
-    width:'50%',
+    width:'75%',
     display:'flex',
     alignItems:'center',
     justifyContent:'center',
@@ -33,21 +33,74 @@ const useStyles=makeStyles({
       justifyContent:'center',
       flexWrap:'wrap',
       borderRadius:'8px',
-  }
+  },
+  '@media screen and (min-width:481px) and  (max-width: 1024px)':{
+    backgroundColor:"rgba(82, 30, 138, 0.5)",
+    margin:'10px',
+    width:'75%',
+    display:'flex',
+    alignItems:'center',
+    justifyContent:'center',
+    flexWrap:'wrap',
+    borderRadius:'8px',
+}
   },
   iconbox:{
     display:'flex',
     flexDirection:'column',
     //backgroundColor:'yellow',
-    color:'white',
+    color:'rgba(250, 249, 246,0.5)',
     alignItems:'center',
     justifyContent:'center',
-    margin:'10px',
+    margin:'3px',
+    width:'150px',
+    height:'70px',
+    '@media screen and (max-width: 480px)':{
+      display:'flex',
+      flexDirection:'column',
+      //backgroundColor:'yellow',
+      color:'rgba(250, 249, 246,0.5)',
+      alignItems:'center',
+      justifyContent:'center',
+      margin:'3px',
+      width:'100px',
+      height:'70px',
+  },
+  '@media screen and (min-width:481px) and  (max-width: 1024px)':{
+    display:'flex',
+    flexDirection:'column',
+    //backgroundColor:'yellow',
+    color:'rgba(250, 249, 246,0.5)',
+    alignItems:'center',
+    justifyContent:'center',
+    margin:'3px',
+    width:'80px',
+    height:'60px',
+}
   },
   img:{
     height:'30px',
     width:'30px',
-    color:'white'
+    color:'rgba(250, 249, 246,0.5)',
+    '@media screen and (max-width: 480px)':{
+      height:'25px',
+      width:'25px',
+      color:'rgba(250, 249, 246,0.5)',
+  },
+  '@media screen and (min-width:481px) and  (max-width: 1024px)':{
+    height:'25px',
+    width:'25px',
+    color:'rgba(250, 249, 246,0.5)',
+}
+  },
+  text:{
+    fontSize:'12px',
+    '@media screen and (max-width: 480px)':{
+      fontSize:'8px'
+  },
+  '@media screen and (min-width:481px) and  (max-width: 1024px)':{
+    fontSize:'8px'
+}
   }
 })
 
@@ -58,37 +111,37 @@ const Icons = () => {
         <Box className={classes.allbox}>
             <Box className={classes.iconbox}>
                 <img className={classes.img} src={ce}/>
-                <Typography style={{"fontSize":"12px"}}>Child</Typography>
-                <Typography style={{"fontSize":"12px"}}>Education</Typography>
+                <Typography className={classes.text}>Child</Typography>
+                <Typography className={classes.text}>Education</Typography>
             </Box>
             <Box className={classes.iconbox}>
                 <img className={classes.img} src={tree}/>
-                <Typography style={{"fontSize":"12px"}}>Tree Plantation</Typography>
-                <Typography style={{"fontSize":"12px"}}>Plantation</Typography>
+                <Typography className={classes.text}>Tree Plantation</Typography>
+                <Typography className={classes.text}>Plantation</Typography>
             </Box>
             <Box className={classes.iconbox}>
                 <img className={classes.img} src={GI}/>
-                <Typography style={{"fontSize":"12px"}}>Gender Inclusivity</Typography>
-                <Typography style={{"fontSize":"12px"}}>Inclusivity</Typography>
+                <Typography className={classes.text}>Gender Inclusivity</Typography>
+                <Typography className={classes.text}>Inclusivity</Typography>
             </Box>
             <Box className={classes.iconbox}>
                 <img className={classes.img} src={emp}/>
-                <Typography style={{"fontSize":"12px"}}>Employement Generation</Typography>
-                <Typography style={{"fontSize":"12px"}}>Generation</Typography>
+                <Typography className={classes.text}>Employement</Typography>
+                <Typography className={classes.text}>Generation</Typography>
             </Box>
             <Box className={classes.iconbox}>
                 <img className={classes.img} src={com}/>
-                <Typography style={{"fontSize":"12px"}}>Cause Driven</Typography>
-                <Typography style={{"fontSize":"12px"}}>consumerism</Typography>
+                <Typography className={classes.text}>Cause Driven</Typography>
+                <Typography className={classes.text}>consumerism</Typography>
             </Box>
             <Box className={classes.iconbox}>
                 <img className={classes.img} src={skill}/>
-                <Typography style={{"fontSize":"12px"}}>Skill Training</Typography>
+                <Typography className={classes.text}>Skill Training</Typography>
             </Box>
             <Box className={classes.iconbox}>
                 <img className={classes.img} src={enr}/>
-                <Typography style={{"fontSize":"12px"}}>Renewable Energy</Typography>
-                <Typography style={{"fontSize":"12px"}}>adoption</Typography>
+                <Typography className={classes.text}>Renewable</Typography>
+                <Typography className={classes.text}> Enegy adoption</Typography>
             </Box>
         </Box>
     </Box>
