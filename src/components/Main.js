@@ -8,7 +8,7 @@ const useStyles=makeStyles({
     wrapper:{
         display:'flex',
         //backgroundColor:'yellow'
-        height:'100vh',
+        height:'800px',
         '@media screen and (max-width: 480px)':{
             display:'flex',
             flexDirection:'column',

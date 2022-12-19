@@ -10,18 +10,18 @@ const useStyles=makeStyles({
     flexDirection:'column',
     //backgroundColor:'yellow',
     width:'100%',
-    height:'100vh',
+    height:'100%',
     '@media screen and (max-width: 480px)':{
       display:'flex',
       flexDirection:'column',
-      backgroundColor:'yellow',
+      backgroundColor:'#460D5C',
       width:'100%',
       height:'100%'
     },
     '@media screen and (max-width: 1024px)':{
       display:'flex',
       flexDirection:'column',
-      backgroundColor:'yellow',
+      backgroundColor:'#460D5C',
       width:'100%',
       height:'100%'
     }
@@ -32,8 +32,12 @@ const RightBox = () => {
   const classes=useStyles();
   return (
     <Box className={classes.wrapper}>
-      <Content/>
-      <Slide/>
+      <Box style={{"backgroundColor":'yellow'}}>
+        <Content/>
+      </Box>
+      <Box>
+        <Slide/>
+      </Box>
     </Box>
   )
 }

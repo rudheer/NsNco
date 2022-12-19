@@ -29,7 +29,7 @@ const useStyles=makeStyles({
     flexDirection:'column',
     //backgroundColor:'yellow',
     width:'100%',
-    height:'70%',
+    height:'100%',
     backgroundImage:`url(${bg})`,
     backgroundRepeat:'no-repeat',
     //backgroundPosition:'inherit',
@@ -41,7 +41,7 @@ const useStyles=makeStyles({
       flexDirection:'column',
       //backgroundColor:'yellow',
       width:'100%',
-      height:'80%',
+      height:'100%',
       backgroundImage:`url(${bg})`,
       backgroundRepeat:'repeat',
       //backgroundPosition:'inherit',
@@ -147,11 +147,11 @@ const useStyles=makeStyles({
       flexDirection:'column'
       //backgroundColor:'blue'
     },
-    '@media screen and (min-width:481px) and  (max-width: 1024px)':{
+    '@media screen and (min-width:481px) and  (max-width: 1200px)':{
       display:'flex',
       alignItems:'center',
       justifyContent:'center',
-      width:'80%',
+      width:'100%',
       //backgroundColor:'blue'
     },
   },

@@ -119,7 +119,7 @@ const useStyles = makeStyles(theme => ({
             backgroundColor:'#460D5C',
             alignItems:'center',
             justifyContent:'center',
-            height:'30%'
+            height:'100%'
         }
 },
 cbox:{
