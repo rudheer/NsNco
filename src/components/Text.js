@@ -51,7 +51,7 @@ const useStyles=makeStyles({
       alignItems:'center',
       justifyContent:'center',
       backgroundColor:"rgba(82, 30, 138, 1)",
-      height:'300px',
+      //height:'300px',
       width:'65%',
       borderRadius:'10px',
       marginLeft:'13%',

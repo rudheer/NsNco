@@ -52,11 +52,11 @@ const useStyles=makeStyles({
   },
   top:{
     display:'flex',
-    alignItems:'center',
-    justifyContent:'center',
+    //alignItems:'center',
+    //justifyContent:'center',
     //backgroundColor:'yellow',
-    width:'50%',
-    padding:'15px',
+    width:'70%',
+    padding:'5px',
     '@media screen and (max-width: 480px)':{
       display:'flex',
       alignItems:'center',
@@ -73,6 +73,23 @@ const useStyles=makeStyles({
     width:'50%',
     //padding:'11px',
  }
+  },
+  topname:{
+    width:'70%',
+    //backgroundColor:'green',
+    '@media screen and (max-width: 480px)':{
+      width:'95%'
+  },
+  },
+  topbtnbox:{
+    //backgroundColor:'blue',
+    width:'30%',
+    display:'flex',
+    alignItems:'flex-start',
+    justifyContent:'center',
+    '@media screen and (max-width: 480px)':{
+      display:'none',
+  },
   },
   img:{
     height:'100px',
@@ -125,10 +142,12 @@ const useStyles=makeStyles({
     justifyContent:'center',
     width:'30%',
     flexDirection:'column',
-    color:'rgba(250, 249, 246,0.7)',
-    backgroundColor:'rgba(82, 30, 138, 0.5)',
+    //color:'rgba(250, 249, 246,0.7)',
+    backgroundColor:'rgba(240,223,157,0.9)',
     borderRadius:'8px',
-    padding:'5px',
+    padding:'15px',
+    marginLeft:'46%',
+    marginTop:'10px',
     '@media screen and (max-width: 480px)':{
       display:'none',
     },
@@ -181,7 +200,7 @@ const useStyles=makeStyles({
     display:'flex',
     alignItems:'center',
     justifyContent:'center',
-    backgroundColor:'white',
+    backgroundColor:'rgb(97,58,81)',
     height:'400px',
     width:'55%',
     borderRadius:'10px',
@@ -191,7 +210,7 @@ const useStyles=makeStyles({
       display:'flex',
       alignItems:'center',
       justifyContent:'center',
-      backgroundColor:'white',
+      backgroundColor:'rgb(97,58,81)',
       height:'400px',
       width:'75%',
       borderRadius:'10px',
@@ -216,6 +235,30 @@ const useStyles=makeStyles({
       borderRadius:'8px',
       padding:'5%',
     },
+  },
+  share:{
+    display:'flex',
+    alignItems:'center',
+    justifyContent:'center',
+    backgroundColor:'rgb(97,58,81)',
+    height:'100px',
+    width:'45%',
+    borderRadius:'10px',
+    marginLeft:'25%',
+    marginTop:'5%',
+    flexWrap:'wrap',
+    '@media screen and (max-width: 480px)':{
+      display:'flex',
+      alignItems:'center',
+      justifyContent:'center',
+      backgroundColor:'rgb(97,58,81)',
+      height:'200px',
+      width:'55%',
+      borderRadius:'10px',
+      marginLeft:'20%',
+      marginTop:'5%',
+      flexWrap:'wrap'
+    },
   }
 })
 
@@ -223,23 +266,22 @@ const Content = () => {
     const classes=useStyles();
     const [shareOpen,setShareopen]=useState(false);
     const [playOpen,setPlayopen]=useState(false);
+    const [moonOpen,setMoonopen]=useState(false);
+    const [txt,setText]=useState("We invite you to join us and take part in this moment for change. Driven by our GenZs, The Happy Hippies Show is a web series of discussions by the leaders, on different social themes.");
   return (
     <Box className={classes.wrapper}>
         <Box className={classes.top}>
-            <img className={classes.img} src={name}/>
+            <Box className={classes.topname}>
+              <img className={classes.img} src={name}/>
+            </Box>
+            <Box className={classes.topbtnbox}>
+              <Button style={{"backgroundColor":'rgba(240,223,157,0.7)',}} className={classes.btn} onClick={()=>setMoonopen(true)}>#MoonProject</Button>
+            </Box>
         </Box>
         <Box  className={classes.bottom}>
             <Box className={classes.bottomleftbox}>
               <Box><Text/></Box>
               <Box className={classes.iconsbox}><Icons/></Box>
-            </Box>
-            <Box className={classes.bottonRightBox}>
-              <Typography style={{"fontSize":'18px',"color":'white'}}>#MoonProject</Typography>
-              <Typography style={{"fontSize":'13px',}}>In current times, the happy hippies are on their journey to be on the moon by 2024. 
-    They are doing this to make earth a better place, cleaner environment, less pollution, no descrimination and happiness for all. 
-    Now the happy hippies of future,  year 2024, from the moon, are showing us their journey from earth to moon through this show.</Typography>
-              <Typography style={{"fontSize":'13px'}}>This show inspires a series of events and conversations with leaders, changemakers and you. 
-    We the happy hippies are the GenZs, the generation of hope,  for future. And this is our #MoonProject.</Typography>
             </Box>
         </Box>
         <Box className={classes.buttonbox}>
@@ -260,14 +302,14 @@ We the happy hippies are the GenZs, the generation of hope,  for future. And thi
         open={shareOpen}
         onClose={()=>setShareopen(false)}
         >
-          <Box style={{"display":'flex',"flexWrap":'wrap',"alignItems":'center',"justifyContent":'center',"backgroundColor":'white',"height":'200px',"width":'55%',"borderRadius":'10px',"marginLeft":'20%',"marginTop":'5%'}}>
-            <EmailShareButton><EmailIcon size={32} round={true} style={{"margin":'10px'}}/></EmailShareButton>
-            <FacebookShareButton><FacebookIcon size={32} round={true} style={{"margin":'10px'}}/></FacebookShareButton>
-            <InstapaperShareButton><InstapaperIcon size={32} round={true} style={{"margin":'10px'}}/></InstapaperShareButton>
-            <LinkedinShareButton><LinkedinIcon size={32} round={true} style={{"margin":'10px'}}/></LinkedinShareButton>
-            <TelegramShareButton><TelegramIcon size={32} round={true} style={{"margin":'10px'}}/></TelegramShareButton>
-            <TwitterShareButton><TwitterIcon size={32} round={true} style={{"margin":'10px'}}/></TwitterShareButton>
-            <WhatsappShareButton><WhatsappIcon size={32} round={true} style={{"margin":'10px'}}/></WhatsappShareButton>
+          <Box className={classes.share}>
+            <EmailShareButton quote={txt} url='https://rudheer.github.io/NsNco/'><EmailIcon size={36} round={true} style={{"margin":'10px'}}/></EmailShareButton>
+            <FacebookShareButton quote={txt} url='https://rudheer.github.io/NsNco/'><FacebookIcon size={36} round={true} style={{"margin":'10px'}}/></FacebookShareButton>
+            <InstapaperShareButton quote={txt} url='https://rudheer.github.io/NsNco/'><InstapaperIcon size={36} round={true} style={{"margin":'10px'}}/></InstapaperShareButton>
+            <LinkedinShareButton quote={txt} url='https://rudheer.github.io/NsNco/'><LinkedinIcon size={36} round={true} style={{"margin":'10px'}}/></LinkedinShareButton>
+            <TelegramShareButton quote={txt} url='https://rudheer.github.io/NsNco/'><TelegramIcon size={36} round={true} style={{"margin":'10px'}}/></TelegramShareButton>
+            <TwitterShareButton quote={txt} url='https://rudheer.github.io/NsNco/'><TwitterIcon size={36} round={true} style={{"margin":'10px'}}/></TwitterShareButton>
+            <WhatsappShareButton quote={txt} url='https://rudheer.github.io/NsNco/'><WhatsappIcon size={36} round={true} style={{"margin":'10px'}}/></WhatsappShareButton>
           </Box>
         </Modal>
         <Modal
@@ -276,6 +318,19 @@ We the happy hippies are the GenZs, the generation of hope,  for future. And thi
         >
           <Box className={classes.playbox} >
             <ReactPlayer playing={true} url='https://www.youtube.com/watch?v=HBxSmhigFQk' />
+          </Box>
+        </Modal>
+        <Modal
+        open={moonOpen}
+        onClose={()=>setMoonopen(false)}
+        >
+          <Box className={classes.bottonRightBox}>
+              <Typography style={{"fontSize":'20px',}}>#MoonProject</Typography>
+              <Typography style={{"fontSize":'13px',}}>In current times, the happy hippies are on their journey to be on the moon by 2024. 
+    They are doing this to make earth a better place, cleaner environment, less pollution, no descrimination and happiness for all. 
+    Now the happy hippies of future,  year 2024, from the moon, are showing us their journey from earth to moon through this show.</Typography>
+              <Typography style={{"fontSize":'13px'}}>This show inspires a series of events and conversations with leaders, changemakers and you. 
+    We the happy hippies are the GenZs, the generation of hope,  for future. And this is our #MoonProject.</Typography>
           </Box>
         </Modal>
     </Box>
